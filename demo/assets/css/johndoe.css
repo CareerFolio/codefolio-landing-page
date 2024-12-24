@@ -11499,7 +11499,7 @@ pre .code {
 }
 
 .footer {
-  background: #17263C;
+  background: #FDFDFE;
 }
 
 .header {
@@ -11682,3 +11682,13 @@ pre .code {
   display: block;
   margin-top: 10px;
 }
+
+.logo-icon-footer {
+  max-height: 2rem;
+}
+
+.footer-text {
+  font-size: 1.9rem;
+}
+
+
