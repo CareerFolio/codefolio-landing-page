@@ -1,0 +1,1656 @@
+<!DOCTYPE html>
+    <html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="description" content="Start your development with JohnDoe landing page.">
+        <meta name="author" content="CodeFolio">
+        <!-- font icons -->
+        <link rel="stylesheet" href="css/formal/themify-icons.css">
+        <!-- Bootstrap + JohnDoe main styles -->
+        <link rel="stylesheet" href="css/formal/johndoe1.css">
+        <title>Leo Chen</title>
+    </head>
+
+    <body data-spy="scroll" data-target=".navbar" data-offset="40" id="home">
+    
+
+    <header class="header">
+
+        <div class="container">
+
+            <div class="header-content">
+
+                <h4 class="header-subtitle">Hello, I am</h4>
+
+                <h1 class="header-title">
+
+                    <span id="codefolio-fname">Leo</span>
+
+                    <span id="codefolio-lname">Chen</span>
+
+                </h1>
+
+                <h6><span class="header-mono" id="definition">Software Engineer</span> | <span class="header-mono" id="spotlight">Software Engineer | Walmart Global Tech</span>
+
+                </h6>
+
+            </div>
+
+        </div>
+
+    </header>
+
+    <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-white affix" data-spy="affix" data-offset-top="510">
+
+        <div class="container">
+
+            <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+
+                <span class="navbar-toggler-icon"></span>
+
+            </button>
+
+            <div class="collapse mt-sm-20 navbar-collapse" id="navbarSupportedContent">
+
+                <ul class="navbar-nav mr-auto">
+
+                    <li class="nav-item">
+
+                        <a href="#home" class="nav-link">Home</a>
+
+                    </li>
+
+                    <li class="nav-item">
+
+                        <a href="#about" class="nav-link">About</a>
+
+                    </li>
+
+                </ul>
+
+                <ul class="navbar-nav brand">
+
+                    <img src="/static/img/templates/formal/avatar.jpg" alt="" class="brand-img">
+
+                    <li class="brand-txt">
+
+                        <h5 class="brand-title">
+
+                            <span id="codefolio-fname"></span>
+
+                            <span id="codefolio-lname"></span>
+
+                        </h5>
+
+                        <div class="brand-subtitle" id="position"></div>
+
+                    </li>
+
+                </ul>
+
+                <ul class="navbar-nav ml-auto">
+
+                    <li class="nav-item">
+
+                        <a href="#resume" class="nav-link active">Resume</a>
+
+                    </li>
+
+                    <li class="nav-item">
+
+                        <a href="#projects-section" class="nav-link">Portfolio</a>
+
+                    </li>
+
+                    <li class="nav-item last-item">
+
+                        <a href="#contact" class="nav-link">Contact</a>
+
+                    </li>
+
+                </ul>
+
+            </div>
+
+        </div>
+
+    </nav>
+
+    <div class="container-fluid">
+
+        <div class="row about-section">
+
+            <div class="col-lg-6 about-card">
+
+                <h3 class="font-weight-light">Who am I?</h3>
+
+                <span class="line mb-5"></span>
+
+                <p class="mt-20" id="about">Hi, I'm Leo and I'm a full-stack software dev engineer! After realizing my passion for programming, I enrolled in Flatiron School's full-stack software engineering program.
+
+                    My passion for engineering started when I joined the First Robotics Competition in my junior year of high school. I then completed my bachelor's degree in mechanical engineering at Rose-Hulman Institute of Technology and throughout my senior year I worked on multiple highly-collaborative team projects with clients such as Cummins Turbo Technologies while taking opportunities to hone my skills as a developer. I've built a variety of projects in team-based environments, allowing me to develop effective communication and project management skills.
+                    
+                    I'm currently working at Walmart as a Software Engineer II! If you are looking for a driven adept full-stack engineer that loves taking on new challenges please don't hesitate to contact me!</p>
+
+            </div>
+
+            <div class="col-lg-6 about-card">
+
+                <h3 class="font-weight-light">Personal Info</h3>
+
+                <span class="line mb-5"></span>
+
+                <ul class="mt40 info list-unstyled">
+
+                    <li><span>Phone</span> : <span style="font-weight: inherit"><a href="tel:8125433024">Call me!</a></span></li>
+
+                    <li><span>Email</span> : <span style="font-weight: inherit"><a href="mailto:chenl3@rose-hulman.edu">chenl3@rose-hulman.edu</a></span></li>
+
+                    <li><span>Location</span> : <span style="font-weight: inherit" id="location">New York, New York, United States of America</span></li>
+
+                </ul>
+
+                <ul class="social-icons pt-3">
+
+                    <li class="social-item"><a class="social-link" href="https://www.linkedin.com/in/leo-chen-9195491a3/" target="_blank"><i class="ti-linkedin" aria-hidden="true"></i></a></li>
+
+                    <li class="social-item"><a class="social-link" href="https://github.com/github.com/rhit-chenl3" target="_blank"><i class="ti-github" aria-hidden="true"></i></a></li>
+
+                </ul>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+    <!--Resume Section-->
+
+    <section class="section" id="resume">
+
+        <div class="container">
+
+            <h2 class="mb-5"><span class="text-danger">My</span> Resume</h2>
+
+            <div class="row">
+
+                <div style="width:100%" id="positions-section">
+
+                    <div class="card">
+
+                        <div class="card-header">
+
+                            <div class="mt-2">
+
+                                <h4>Experience</h4>
+
+                                <span class="line"></span>
+
+                            </div>
+
+                        </div>
+
+                        <div class="card-body" id="positions">
+
+                            <template id="position-template">
+
+                                <div>
+
+                                    <h6 class="title text-danger position-title"></h6>
+
+                                    <p class="position-company"></p>
+
+                                    <p class="position-years"></p>
+
+                                    <p class="subtitle position-description"></p>
+
+                                    <hr>
+
+                                </div>
+
+                            </template>
+
+                        <div id="position-0">
+
+                                    <h6 class="title text-danger position-title">Software Engineer II</h6>
+
+                                    <p class="position-company">Walmart Global Tech</p>
+
+                                    <p class="position-years">5/2022 - Present</p>
+
+                                    <p class="subtitle position-description">Skills: React.js · React Native</p>
+
+                                    <hr>
+
+                                </div><div id="position-1">
+
+                                    <h6 class="title text-danger position-title">Senior Capstone Design Team Member</h6>
+
+                                    <p class="position-company">CUMMINS TURBO TECHNOLOGIES LIMITED</p>
+
+                                    <p class="position-years">8/2020 - 6/2021</p>
+
+                                    <p class="subtitle position-description">Utilized requirements elicitation techniques such as conducting stakeholder analysis and prototyping in weekly check-in sessions with customers<br>Led design of test rig to measure rivet hole wear without destructive disassembly<br>Professionally documented and conducted design process with NDA precautions in the form of 36-page deliverable<br>Drove effort to create Gantt Chart for project development timeline with deadlines and contingency plans</p>
+
+                                    <hr>
+
+                                </div><div id="position-2">
+
+                                    <h6 class="title text-danger position-title">Office Intern</h6>
+
+                                    <p class="position-company">Amazon Web Services (AWS)</p>
+
+                                    <p class="position-years">6/2019 - 7/2019</p>
+
+                                    <p class="subtitle position-description">Organized multiple events for over 20 startup companies to present their products to potential investors<br>Designed and translated over 4 of Taiwan's Amazon Web Service pages<br>Helped set up equipment for multiple tech events in which the mayor of New Taipei City attended</p>
+
+                                    <hr>
+
+                                </div><div id="position-3">
+
+                                    <h6 class="title text-danger position-title">Mechanical Engineering Intern</h6>
+
+                                    <p class="position-company">Foxconn</p>
+
+                                    <p class="position-years">6/2018 - 8/2018</p>
+
+                                    <p class="subtitle position-description">Tested heat flow and material of Razer Phone 2<br>Disassembled and reassembled 3 different smartphones &amp; Molekule air filter<br>Evaluated 5 industrial adhesives and 5 materials through testing<br>Analyzed basic heat flow of thermodynamics in 3 different smartphones</p>
+
+                                    <hr>
+
+                                </div><div id="position-4">
+
+                                    <h6 class="title text-danger position-title">Raid Zero – Team 4253 CAD Design Member</h6>
+
+                                    <p class="position-company">FIRST Robotics Competition</p>
+
+                                    <p class="position-years">8/2015 - 6/2017</p>
+
+                                    <p class="subtitle position-description">Designed and prototyped 3 shooters as well as base of the robot<br>Planned intense 10 week designing and building time limit<br>Traveled to attend regional events and competitions<br>Taught others how to utilize CAD software SolidWorks<br>Collaborated closely with 6 design members and 4 programmers</p>
+
+                                    <hr>
+
+                                </div></div>
+
+                    </div>
+
+                </div>
+
+                <div style="width:100%" id="education-section">
+
+                    <div class="card">
+
+                        <div class="card-header">
+
+                            <div class="mt-2">
+
+                                <h4>Education</h4>
+
+                                <span class="line"></span>
+
+                            </div>
+
+                        </div>
+
+                        <div class="card-body" id="education">
+
+                            <template id="education-template">
+
+                                <div>
+
+                                    <h6 class="title text-danger education-field"></h6>
+
+                                    <p><span class="education-degree"></span> at <span class="education-school"></span>
+
+                                    </p>
+
+                                    <p class="education-years"></p>
+
+                                    <p class="education-description"></p>
+
+                                    <hr>
+
+                                </div>
+
+                            </template>
+
+                        <div id="education-0">
+
+                                    <h6 class="title text-danger education-field"></h6>
+
+                                    <p><span class="education-degree">Software Engineering</span> at <span class="education-school">Flatiron School</span>
+
+                                    </p>
+
+                                    <p class="education-years">9/2021 - 1/2022</p>
+
+                                    <p class="education-description"></p>
+
+                                    <hr>
+
+                                </div><div id="education-1">
+
+                                    <h6 class="title text-danger education-field">Mechanical Engineering</h6>
+
+                                    <p><span class="education-degree">Bachelor's degree</span> at <span class="education-school">Rose-Hulman Institute of Technology</span>
+
+                                    </p>
+
+                                    <p class="education-years">1/2017 - 1/2021</p>
+
+                                    <p class="education-description"></p>
+
+                                    <hr>
+
+                                </div></div>
+
+                    </div>
+
+                </div>
+
+                <div style="width:100%" id="skills-section">
+
+                    <div class="card">
+
+                        <div class="card-header">
+
+                            <div class="pull-left">
+
+                                <h4 class="mt-2">Skills</h4>
+
+                                <span class="line"></span>
+
+                            </div>
+
+                        </div>
+
+                        <style>
+
+                            .skills-container {
+
+                                display: flex;
+
+                                flex-wrap: wrap;
+
+                                gap: 12px;
+
+                                padding: 20px;
+
+                                max-width: 800px;
+
+                                margin: 0 auto;
+
+                                justify-content: flex-start;
+
+                                background-color: white;
+
+                                border-radius: 8px;
+
+                            }
+
+
+
+                            .skill-bubble {
+
+                                background-color: #f0f4f8;
+
+                                padding: 8px 16px;
+
+                                border-radius: 12px;
+
+                                display: inline-flex;
+
+                                align-items: center;
+
+                                justify-content: center;
+
+                                font-size: 14px;
+
+                                color: #2d3748;
+
+                                transition: all 0.2s ease-in-out;
+
+                                border: 2px solid transparent;
+
+                                cursor: default;
+
+                                font-weight: 500;
+
+                            }
+
+
+
+                            .skill-bubble:hover {
+
+                                background-color: #e2e8f0;
+
+                                transform: translateY(-2px);
+
+                                box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+
+                                border-color: #4299e1;
+
+                            }
+
+                        </style>
+
+                        <div class="card-body pb-2">
+
+                            <div class="skills-container" id="skills">
+
+
+
+
+
+                                <template id="skill-template">
+
+                                    <div>
+
+
+
+                                        <span class="skill-bubble skill-name"></span>
+
+
+
+                                    </div>
+
+                                </template>
+
+                            <div id="skill-0">
+
+
+
+                                        <span class="skill-bubble skill-name">Ruby on Rails</span>
+
+
+
+                                    </div><div id="skill-1">
+
+
+
+                                        <span class="skill-bubble skill-name">React.js</span>
+
+
+
+                                    </div><div id="skill-2">
+
+
+
+                                        <span class="skill-bubble skill-name">Java</span>
+
+
+
+                                    </div><div id="skill-3">
+
+
+
+                                        <span class="skill-bubble skill-name">Engineering</span>
+
+
+
+                                    </div><div id="skill-4">
+
+
+
+                                        <span class="skill-bubble skill-name">Python (Programming Language)</span>
+
+
+
+                                    </div><div id="skill-5">
+
+
+
+                                        <span class="skill-bubble skill-name">SOLIDWORKS</span>
+
+
+
+                                    </div><div id="skill-6">
+
+
+
+                                        <span class="skill-bubble skill-name">MATLAB</span>
+
+
+
+                                    </div><div id="skill-7">
+
+
+
+                                        <span class="skill-bubble skill-name">PTC Creo</span>
+
+
+
+                                    </div><div id="skill-8">
+
+
+
+                                        <span class="skill-bubble skill-name">SolidWorks</span>
+
+
+
+                                    </div><div id="skill-9">
+
+
+
+                                        <span class="skill-bubble skill-name">JavaScript</span>
+
+
+
+                                    </div><div id="skill-10">
+
+
+
+                                        <span class="skill-bubble skill-name">Ruby</span>
+
+
+
+                                    </div><div id="skill-11">
+
+
+
+                                        <span class="skill-bubble skill-name">Communication</span>
+
+
+
+                                    </div><div id="skill-12">
+
+
+
+                                        <span class="skill-bubble skill-name">Problem Solving</span>
+
+
+
+                                    </div><div id="skill-13">
+
+
+
+                                        <span class="skill-bubble skill-name">Leadership</span>
+
+
+
+                                    </div><div id="skill-14">
+
+
+
+                                        <span class="skill-bubble skill-name">English</span>
+
+
+
+                                    </div><div id="skill-15">
+
+
+
+                                        <span class="skill-bubble skill-name">Japanese</span>
+
+
+
+                                    </div><div id="skill-16">
+
+
+
+                                        <span class="skill-bubble skill-name">Chinese</span>
+
+
+
+                                    </div><div id="skill-17">
+
+
+
+                                        <span class="skill-bubble skill-name">Full-Stack Development</span>
+
+
+
+                                    </div><div id="skill-18">
+
+
+
+                                        <span class="skill-bubble skill-name">Front-End Development</span>
+
+
+
+                                    </div><div id="skill-19">
+
+
+
+                                        <span class="skill-bubble skill-name">Back-End Web Development</span>
+
+
+
+                                    </div><div id="skill-20">
+
+
+
+                                        <span class="skill-bubble skill-name">React Native</span>
+
+
+
+                                    </div></div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- Portfolio Section -->
+
+    <section class="section bg-custom-gray" id="portfolio">
+
+        <div class="container" id="projects-section">
+
+            <h1 class="mb-5"><span class="text-danger">My</span> Portfolio</h1>
+
+            <div class="portfolio">
+
+                <div class="portfolio-container" id="projects">
+
+                    <template id="project-template">
+
+                        <div>
+
+                            <a class="project-link">
+
+                                <div class="portfolio-item">
+
+                                    <img class="img-fluid proj-img" alt="project image">
+
+                                    <!-- Add this div for the always-visible title -->
+
+                                    <div class="text-holder">
+
+                                        <h6 class="title project-name"></h6>
+
+                                    </div>
+
+                                    <div class="content-holder">
+
+                                        <div class="text-holder">
+
+                                            <p class="subtitle project-description"></p>
+
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                            </a>
+
+                        </div>
+
+                    </template>
+
+                <div id="project-0">
+
+                            <a class="project-link" href="https://github.com/rhit-chenl3/basketball-stats-tracker">
+
+                                <div class="portfolio-item">
+
+                                    <img class="img-fluid proj-img" alt="project image" src="https://picsum.photos/700/600?random=0">
+
+                                    <!-- Add this div for the always-visible title -->
+
+                                    <div class="text-holder">
+
+                                        <h6 class="title project-name">basketball-stats-tracker</h6>
+
+                                    </div>
+
+                                    <div class="content-holder">
+
+                                        <div class="text-holder">
+
+                                            <p class="subtitle project-description"></p>
+
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                            </a>
+
+                        </div><div id="project-1">
+
+                            <a class="project-link" href="https://github.com/rhit-chenl3/dot-matrix">
+
+                                <div class="portfolio-item">
+
+                                    <img class="img-fluid proj-img" alt="project image" src="https://picsum.photos/700/600?random=1">
+
+                                    <!-- Add this div for the always-visible title -->
+
+                                    <div class="text-holder">
+
+                                        <h6 class="title project-name">dot-matrix</h6>
+
+                                    </div>
+
+                                    <div class="content-holder">
+
+                                        <div class="text-holder">
+
+                                            <p class="subtitle project-description"></p>
+
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                            </a>
+
+                        </div><div id="project-2">
+
+                            <a class="project-link" href="https://github.com/rhit-chenl3/fibonacci-series">
+
+                                <div class="portfolio-item">
+
+                                    <img class="img-fluid proj-img" alt="project image" src="https://picsum.photos/700/600?random=2">
+
+                                    <!-- Add this div for the always-visible title -->
+
+                                    <div class="text-holder">
+
+                                        <h6 class="title project-name">fibonacci-series</h6>
+
+                                    </div>
+
+                                    <div class="content-holder">
+
+                                        <div class="text-holder">
+
+                                            <p class="subtitle project-description">algorithms and data structures</p>
+
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                            </a>
+
+                        </div><div id="project-3" hidden="">
+
+                            <a class="project-link" href="https://github.com/rhit-chenl3/find-first-duplicate">
+
+                                <div class="portfolio-item">
+
+                                    <img class="img-fluid proj-img" alt="project image" src="https://picsum.photos/700/600?random=3">
+
+                                    <!-- Add this div for the always-visible title -->
+
+                                    <div class="text-holder">
+
+                                        <h6 class="title project-name">find-first-duplicate</h6>
+
+                                    </div>
+
+                                    <div class="content-holder">
+
+                                        <div class="text-holder">
+
+                                            <p class="subtitle project-description">algorithms and data structures</p>
+
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                            </a>
+
+                        </div><div id="project-4" hidden="">
+
+                            <a class="project-link" href="https://github.com/rhit-chenl3/fitness-goal-getter">
+
+                                <div class="portfolio-item">
+
+                                    <img class="img-fluid proj-img" alt="project image" src="https://picsum.photos/700/600?random=4">
+
+                                    <!-- Add this div for the always-visible title -->
+
+                                    <div class="text-holder">
+
+                                        <h6 class="title project-name">fitness-goal-getter</h6>
+
+                                    </div>
+
+                                    <div class="content-holder">
+
+                                        <div class="text-holder">
+
+                                            <p class="subtitle project-description"></p>
+
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                            </a>
+
+                        </div><div id="project-5">
+
+                            <a class="project-link" href="https://github.com/rhit-chenl3/flatiron-bakes">
+
+                                <div class="portfolio-item">
+
+                                    <img class="img-fluid proj-img" alt="project image" src="https://picsum.photos/700/600?random=5">
+
+                                    <!-- Add this div for the always-visible title -->
+
+                                    <div class="text-holder">
+
+                                        <h6 class="title project-name">flatiron-bakes</h6>
+
+                                    </div>
+
+                                    <div class="content-holder">
+
+                                        <div class="text-holder">
+
+                                            <p class="subtitle project-description"></p>
+
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                            </a>
+
+                        </div><div id="project-6" hidden="">
+
+                            <a class="project-link" href="https://github.com/rhit-chenl3/hosting-a-website-on-github">
+
+                                <div class="portfolio-item">
+
+                                    <img class="img-fluid proj-img" alt="project image" src="https://picsum.photos/700/600?random=6">
+
+                                    <!-- Add this div for the always-visible title -->
+
+                                    <div class="text-holder">
+
+                                        <h6 class="title project-name">hosting-a-website-on-github</h6>
+
+                                    </div>
+
+                                    <div class="content-holder">
+
+                                        <div class="text-holder">
+
+                                            <p class="subtitle project-description"></p>
+
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                            </a>
+
+                        </div><div id="project-7">
+
+                            <a class="project-link" href="https://github.com/rhit-chenl3/jet-pac-arcade-game-final-project">
+
+                                <div class="portfolio-item">
+
+                                    <img class="img-fluid proj-img" alt="project image" src="https://picsum.photos/700/600?random=7">
+
+                                    <!-- Add this div for the always-visible title -->
+
+                                    <div class="text-holder">
+
+                                        <h6 class="title project-name">jet-pac-arcade-game-final-project</h6>
+
+                                    </div>
+
+                                    <div class="content-holder">
+
+                                        <div class="text-holder">
+
+                                            <p class="subtitle project-description"></p>
+
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                            </a>
+
+                        </div><div id="project-8" hidden="">
+
+                            <a class="project-link" href="https://github.com/rhit-chenl3/learn-co-sandbox">
+
+                                <div class="portfolio-item">
+
+                                    <img class="img-fluid proj-img" alt="project image" src="https://picsum.photos/700/600?random=8">
+
+                                    <!-- Add this div for the always-visible title -->
+
+                                    <div class="text-holder">
+
+                                        <h6 class="title project-name">learn-co-sandbox</h6>
+
+                                    </div>
+
+                                    <div class="content-holder">
+
+                                        <div class="text-holder">
+
+                                            <p class="subtitle project-description"></p>
+
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                            </a>
+
+                        </div><div id="project-9" hidden="">
+
+                            <a class="project-link" href="https://github.com/rhit-chenl3/my-new-repo">
+
+                                <div class="portfolio-item">
+
+                                    <img class="img-fluid proj-img" alt="project image" src="https://picsum.photos/700/600?random=9">
+
+                                    <!-- Add this div for the always-visible title -->
+
+                                    <div class="text-holder">
+
+                                        <h6 class="title project-name">my-new-repo</h6>
+
+                                    </div>
+
+                                    <div class="content-holder">
+
+                                        <div class="text-holder">
+
+                                            <p class="subtitle project-description"></p>
+
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                            </a>
+
+                        </div><div id="project-10" hidden="">
+
+                            <a class="project-link" href="https://github.com/rhit-chenl3/my-repository-example">
+
+                                <div class="portfolio-item">
+
+                                    <img class="img-fluid proj-img" alt="project image" src="https://picsum.photos/700/600?random=10">
+
+                                    <!-- Add this div for the always-visible title -->
+
+                                    <div class="text-holder">
+
+                                        <h6 class="title project-name">my-repository-example</h6>
+
+                                    </div>
+
+                                    <div class="content-holder">
+
+                                        <div class="text-holder">
+
+                                            <p class="subtitle project-description"></p>
+
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                            </a>
+
+                        </div><div id="project-11" hidden="">
+
+                            <a class="project-link" href="https://github.com/rhit-chenl3/phase-0-completing-assignments">
+
+                                <div class="portfolio-item">
+
+                                    <img class="img-fluid proj-img" alt="project image" src="https://picsum.photos/700/600?random=11">
+
+                                    <!-- Add this div for the always-visible title -->
+
+                                    <div class="text-holder">
+
+                                        <h6 class="title project-name">phase-0-completing-assignments</h6>
+
+                                    </div>
+
+                                    <div class="content-holder">
+
+                                        <div class="text-holder">
+
+                                            <p class="subtitle project-description"></p>
+
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                            </a>
+
+                        </div><div id="project-12" hidden="">
+
+                            <a class="project-link" href="https://github.com/rhit-chenl3/phase-0-configuring-the-flatiron-student-portal">
+
+                                <div class="portfolio-item">
+
+                                    <img class="img-fluid proj-img" alt="project image" src="https://picsum.photos/700/600?random=12">
+
+                                    <!-- Add this div for the always-visible title -->
+
+                                    <div class="text-holder">
+
+                                        <h6 class="title project-name">phase-0-configuring-the-flatiron-student-portal</h6>
+
+                                    </div>
+
+                                    <div class="content-holder">
+
+                                        <div class="text-holder">
+
+                                            <p class="subtitle project-description"></p>
+
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                            </a>
+
+                        </div><div id="project-13" hidden="">
+
+                            <a class="project-link" href="https://github.com/rhit-chenl3/phase-0-css-fundamentals-lab">
+
+                                <div class="portfolio-item">
+
+                                    <img class="img-fluid proj-img" alt="project image" src="https://picsum.photos/700/600?random=13">
+
+                                    <!-- Add this div for the always-visible title -->
+
+                                    <div class="text-holder">
+
+                                        <h6 class="title project-name">phase-0-css-fundamentals-lab</h6>
+
+                                    </div>
+
+                                    <div class="content-holder">
+
+                                        <div class="text-holder">
+
+                                            <p class="subtitle project-description"></p>
+
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                            </a>
+
+                        </div><div id="project-14" hidden="">
+
+                            <a class="project-link" href="https://github.com/rhit-chenl3/phase-0-css-graffiti-lab">
+
+                                <div class="portfolio-item">
+
+                                    <img class="img-fluid proj-img" alt="project image" src="https://picsum.photos/700/600?random=14">
+
+                                    <!-- Add this div for the always-visible title -->
+
+                                    <div class="text-holder">
+
+                                        <h6 class="title project-name">phase-0-css-graffiti-lab</h6>
+
+                                    </div>
+
+                                    <div class="content-holder">
+
+                                        <div class="text-holder">
+
+                                            <p class="subtitle project-description"></p>
+
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                            </a>
+
+                        </div><div id="project-15" hidden="">
+
+                            <a class="project-link" href="https://github.com/rhit-chenl3/phase-0-css-intro-lab">
+
+                                <div class="portfolio-item">
+
+                                    <img class="img-fluid proj-img" alt="project image" src="https://picsum.photos/700/600?random=15">
+
+                                    <!-- Add this div for the always-visible title -->
+
+                                    <div class="text-holder">
+
+                                        <h6 class="title project-name">phase-0-css-intro-lab</h6>
+
+                                    </div>
+
+                                    <div class="content-holder">
+
+                                        <div class="text-holder">
+
+                                            <p class="subtitle project-description"></p>
+
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                            </a>
+
+                        </div><div id="project-16" hidden="">
+
+                            <a class="project-link" href="https://github.com/rhit-chenl3/phase-0-css-issue-bot-9000">
+
+                                <div class="portfolio-item">
+
+                                    <img class="img-fluid proj-img" alt="project image" src="https://picsum.photos/700/600?random=16">
+
+                                    <!-- Add this div for the always-visible title -->
+
+                                    <div class="text-holder">
+
+                                        <h6 class="title project-name">phase-0-css-issue-bot-9000</h6>
+
+                                    </div>
+
+                                    <div class="content-holder">
+
+                                        <div class="text-holder">
+
+                                            <p class="subtitle project-description"></p>
+
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                            </a>
+
+                        </div><div id="project-17" hidden="">
+
+                            <a class="project-link" href="https://github.com/rhit-chenl3/phase-0-css-kitten-lab">
+
+                                <div class="portfolio-item">
+
+                                    <img class="img-fluid proj-img" alt="project image" src="https://picsum.photos/700/600?random=17">
+
+                                    <!-- Add this div for the always-visible title -->
+
+                                    <div class="text-holder">
+
+                                        <h6 class="title project-name">phase-0-css-kitten-lab</h6>
+
+                                    </div>
+
+                                    <div class="content-holder">
+
+                                        <div class="text-holder">
+
+                                            <p class="subtitle project-description"></p>
+
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                            </a>
+
+                        </div><div id="project-18" hidden="">
+
+                            <a class="project-link" href="https://github.com/rhit-chenl3/phase-0-css-rainbow-lab">
+
+                                <div class="portfolio-item">
+
+                                    <img class="img-fluid proj-img" alt="project image" src="https://picsum.photos/700/600?random=18">
+
+                                    <!-- Add this div for the always-visible title -->
+
+                                    <div class="text-holder">
+
+                                        <h6 class="title project-name">phase-0-css-rainbow-lab</h6>
+
+                                    </div>
+
+                                    <div class="content-holder">
+
+                                        <div class="text-holder">
+
+                                            <p class="subtitle project-description"></p>
+
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                            </a>
+
+                        </div><div id="project-19" hidden="">
+
+                            <a class="project-link" href="https://github.com/rhit-chenl3/phase-0-getting-code-with-git">
+
+                                <div class="portfolio-item">
+
+                                    <img class="img-fluid proj-img" alt="project image" src="https://picsum.photos/700/600?random=19">
+
+                                    <!-- Add this div for the always-visible title -->
+
+                                    <div class="text-holder">
+
+                                        <h6 class="title project-name">phase-0-getting-code-with-git</h6>
+
+                                    </div>
+
+                                    <div class="content-holder">
+
+                                        <div class="text-holder">
+
+                                            <p class="subtitle project-description"></p>
+
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                            </a>
+
+                        </div><div id="project-20" hidden="">
+
+                            <a class="project-link" href="https://github.com/rhit-chenl3/phase-0-git-basics-lab">
+
+                                <div class="portfolio-item">
+
+                                    <img class="img-fluid proj-img" alt="project image" src="https://picsum.photos/700/600?random=20">
+
+                                    <!-- Add this div for the always-visible title -->
+
+                                    <div class="text-holder">
+
+                                        <h6 class="title project-name">phase-0-git-basics-lab</h6>
+
+                                    </div>
+
+                                    <div class="content-holder">
+
+                                        <div class="text-holder">
+
+                                            <p class="subtitle project-description"></p>
+
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                            </a>
+
+                        </div><div id="project-21" hidden="">
+
+                            <a class="project-link" href="https://github.com/rhit-chenl3/phase-0-html-album-cover-lab">
+
+                                <div class="portfolio-item">
+
+                                    <img class="img-fluid proj-img" alt="project image" src="https://picsum.photos/700/600?random=21">
+
+                                    <!-- Add this div for the always-visible title -->
+
+                                    <div class="text-holder">
+
+                                        <h6 class="title project-name">phase-0-html-album-cover-lab</h6>
+
+                                    </div>
+
+                                    <div class="content-holder">
+
+                                        <div class="text-holder">
+
+                                            <p class="subtitle project-description"></p>
+
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                            </a>
+
+                        </div><div id="project-22" hidden="">
+
+                            <a class="project-link" href="https://github.com/rhit-chenl3/phase-0-html-document-structure-lab">
+
+                                <div class="portfolio-item">
+
+                                    <img class="img-fluid proj-img" alt="project image" src="https://picsum.photos/700/600?random=22">
+
+                                    <!-- Add this div for the always-visible title -->
+
+                                    <div class="text-holder">
+
+                                        <h6 class="title project-name">phase-0-html-document-structure-lab</h6>
+
+                                    </div>
+
+                                    <div class="content-holder">
+
+                                        <div class="text-holder">
+
+                                            <p class="subtitle project-description"></p>
+
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                            </a>
+
+                        </div><div id="project-23" hidden="">
+
+                            <a class="project-link" href="https://github.com/rhit-chenl3/phase-0-html-experiencing-html-lab">
+
+                                <div class="portfolio-item">
+
+                                    <img class="img-fluid proj-img" alt="project image" src="https://picsum.photos/700/600?random=23">
+
+                                    <!-- Add this div for the always-visible title -->
+
+                                    <div class="text-holder">
+
+                                        <h6 class="title project-name">phase-0-html-experiencing-html-lab</h6>
+
+                                    </div>
+
+                                    <div class="content-holder">
+
+                                        <div class="text-holder">
+
+                                            <p class="subtitle project-description"></p>
+
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                            </a>
+
+                        </div><div id="project-24" hidden="">
+
+                            <a class="project-link" href="https://github.com/rhit-chenl3/phase-0-html-images-lab">
+
+                                <div class="portfolio-item">
+
+                                    <img class="img-fluid proj-img" alt="project image" src="https://picsum.photos/700/600?random=24">
+
+                                    <!-- Add this div for the always-visible title -->
+
+                                    <div class="text-holder">
+
+                                        <h6 class="title project-name">phase-0-html-images-lab</h6>
+
+                                    </div>
+
+                                    <div class="content-holder">
+
+                                        <div class="text-holder">
+
+                                            <p class="subtitle project-description"></p>
+
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                            </a>
+
+                        </div><div id="project-25" hidden="">
+
+                            <a class="project-link" href="https://github.com/rhit-chenl3/phase-0-html-issue-bot-9000-lab">
+
+                                <div class="portfolio-item">
+
+                                    <img class="img-fluid proj-img" alt="project image" src="https://picsum.photos/700/600?random=25">
+
+                                    <!-- Add this div for the always-visible title -->
+
+                                    <div class="text-holder">
+
+                                        <h6 class="title project-name">phase-0-html-issue-bot-9000-lab</h6>
+
+                                    </div>
+
+                                    <div class="content-holder">
+
+                                        <div class="text-holder">
+
+                                            <p class="subtitle project-description"></p>
+
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                            </a>
+
+                        </div><div id="project-26" hidden="">
+
+                            <a class="project-link" href="https://github.com/rhit-chenl3/phase-0-html-link-tag-with-href">
+
+                                <div class="portfolio-item">
+
+                                    <img class="img-fluid proj-img" alt="project image" src="https://picsum.photos/700/600?random=26">
+
+                                    <!-- Add this div for the always-visible title -->
+
+                                    <div class="text-holder">
+
+                                        <h6 class="title project-name">phase-0-html-link-tag-with-href</h6>
+
+                                    </div>
+
+                                    <div class="content-holder">
+
+                                        <div class="text-holder">
+
+                                            <p class="subtitle project-description"></p>
+
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                            </a>
+
+                        </div><div id="project-27" hidden="">
+
+                            <a class="project-link" href="https://github.com/rhit-chenl3/phase-0-html-lists-lab">
+
+                                <div class="portfolio-item">
+
+                                    <img class="img-fluid proj-img" alt="project image" src="https://picsum.photos/700/600?random=27">
+
+                                    <!-- Add this div for the always-visible title -->
+
+                                    <div class="text-holder">
+
+                                        <h6 class="title project-name">phase-0-html-lists-lab</h6>
+
+                                    </div>
+
+                                    <div class="content-holder">
+
+                                        <div class="text-holder">
+
+                                            <p class="subtitle project-description"></p>
+
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                            </a>
+
+                        </div><div id="project-28" hidden="">
+
+                            <a class="project-link" href="https://github.com/rhit-chenl3/phase-0-html-riyadh-blog-lab">
+
+                                <div class="portfolio-item">
+
+                                    <img class="img-fluid proj-img" alt="project image" src="https://picsum.photos/700/600?random=28">
+
+                                    <!-- Add this div for the always-visible title -->
+
+                                    <div class="text-holder">
+
+                                        <h6 class="title project-name">phase-0-html-riyadh-blog-lab</h6>
+
+                                    </div>
+
+                                    <div class="content-holder">
+
+                                        <div class="text-holder">
+
+                                            <p class="subtitle project-description"></p>
+
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                            </a>
+
+                        </div><div id="project-29" hidden="">
+
+                            <a class="project-link" href="https://github.com/rhit-chenl3/phase-0-html-tables-lab">
+
+                                <div class="portfolio-item">
+
+                                    <img class="img-fluid proj-img" alt="project image" src="https://picsum.photos/700/600?random=29">
+
+                                    <!-- Add this div for the always-visible title -->
+
+                                    <div class="text-holder">
+
+                                        <h6 class="title project-name">phase-0-html-tables-lab</h6>
+
+                                    </div>
+
+                                    <div class="content-holder">
+
+                                        <div class="text-holder">
+
+                                            <p class="subtitle project-description"></p>
+
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                            </a>
+
+                        </div></div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <footer class="footer py-3">
+
+        <div class="container">
+
+            <p class="mb-0 text-dark footer-text" style="font-size: small;">
+
+                ©
+
+                <script>document.write(new Date().getFullYear())</script>
+
+            </p>
+
+        </div>
+
+    </footer>
+
+
+
+    <!-- core  -->
+
+    <script src="js/formal/jquery-3.4.1.min.js"></script>
+
+    <script src="js/formal/bootstrap.bundle.min.js"></script>
+
+
+
+    <!-- bootstrap 3 affix -->
+
+    <script src="js/formal/bootstrap.affix.js"></script>
+
+
+
+    <!-- Isotope  -->
+
+    <script src="js/formal/isotope.pkgd.min.js"></script>
+
+
+
+    <!-- JohnDoe js -->
+
+    <script src="js/formal/johndoe.js"></script>
+
+
+
+
+
+
+
+
+    </body>
+
+    </html>

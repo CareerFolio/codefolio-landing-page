@@ -1,0 +1,1800 @@
+<!DOCTYPE html>
+    <html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="description" content="Start your development with JohnDoe landing page.">
+        <meta name="author" content="CodeFolio">
+        <!-- font icons -->
+        <link rel="stylesheet" href="css/formal/themify-icons.css">
+        <!-- Bootstrap + JohnDoe main styles -->
+        <link rel="stylesheet" href="css/formal/johndoe.css">
+        <title>Alex Anisimov</title>
+    </head>
+
+    <body data-spy="scroll" data-target=".navbar" data-offset="40" id="home">
+    
+
+    <header class="header">
+
+        <div class="container">
+
+            <div class="header-content">
+
+                <h4 class="header-subtitle">Hello, I am</h4>
+
+                <h1 class="header-title">
+
+                    <span id="codefolio-fname">Alex</span>
+
+                    <span id="codefolio-lname">Anisimov</span>
+
+                </h1>
+
+                <h6><span class="header-mono" id="definition">Software Engineer</span> | <span class="header-mono" id="spotlight">Software Engineering at Rose-Hulman Institute of Technology | SWE Intern @ Wi-Tronix</span>
+
+                </h6>
+
+            </div>
+
+        </div>
+
+    </header>
+
+    <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-white affix-top" data-spy="affix" data-offset-top="510">
+
+        <div class="container">
+
+            <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+
+                <span class="navbar-toggler-icon"></span>
+
+            </button>
+
+            <div class="collapse mt-sm-20 navbar-collapse" id="navbarSupportedContent">
+
+                <ul class="navbar-nav mr-auto">
+
+                    <li class="nav-item">
+
+                        <a href="#home" class="nav-link active">Home</a>
+
+                    </li>
+
+                    <li class="nav-item">
+
+                        <a href="#about" class="nav-link">About</a>
+
+                    </li>
+
+                </ul>
+
+                <ul class="navbar-nav brand">
+
+                    <img src="/static/img/templates/formal/avatar.jpg" alt="" class="brand-img">
+
+                    <li class="brand-txt">
+
+                        <h5 class="brand-title">
+
+                            <span id="codefolio-fname"></span>
+
+                            <span id="codefolio-lname"></span>
+
+                        </h5>
+
+                        <div class="brand-subtitle" id="position"></div>
+
+                    </li>
+
+                </ul>
+
+                <ul class="navbar-nav ml-auto">
+
+                    <li class="nav-item">
+
+                        <a href="#resume" class="nav-link">Resume</a>
+
+                    </li>
+
+                    <li class="nav-item">
+
+                        <a href="#projects-section" class="nav-link">Portfolio</a>
+
+                    </li>
+
+                    <li class="nav-item last-item">
+
+                        <a href="#contact" class="nav-link">Contact</a>
+
+                    </li>
+
+                </ul>
+
+            </div>
+
+        </div>
+
+    </nav>
+
+    <div class="container-fluid">
+
+        <div class="row about-section">
+
+            <div class="col-lg-6 about-card">
+
+                <h3 class="font-weight-light">Who am I?</h3>
+
+                <span class="line mb-5"></span>
+
+                <p class="mt-20" id="about">Hello! I'm a Software Engineering major at Rose-Hulman. I'm passionate about bettering the world through technology. Be that an app reducing plastic, an online resource helping novices in Computer Science, or simply a website enhancing people's mood, I'd absolutely love to get involved in it! Feel free to get in touch with me — I'm always open to new connections</p>
+
+            </div>
+
+            <div class="col-lg-6 about-card">
+
+                <h3 class="font-weight-light">Personal Info</h3>
+
+                <span class="line mb-5"></span>
+
+                <ul class="mt40 info list-unstyled">
+
+                    <li><span>Phone</span> : <span style="font-weight: inherit">(555) 555-5555</span></li>
+
+                    <li><span>Email</span> : <span style="font-weight: inherit">testtrehhkjrehtkrehkt@test.com</span></li>
+
+                    <li><span>Location</span> : <span style="font-weight: inherit" id="location">Terre Haute, Indiana, United States of America</span></li>
+
+                </ul>
+
+                <ul class="social-icons pt-3">
+
+                    <li class="social-item"><a class="social-link" href="https://www.linkedin.com/in/aleksandr-anisimov" target="_blank"><i class="ti-linkedin" aria-hidden="true"></i></a></li>
+
+                    <li class="social-item"><a class="social-link" href="https://github.com/github.com/aadev151" target="_blank"><i class="ti-github" aria-hidden="true"></i></a></li>
+
+                </ul>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+    <!--Resume Section-->
+
+    <section class="section" id="resume">
+
+        <div class="container">
+
+            <h2 class="mb-5"><span class="text-danger">My</span> Resume</h2>
+
+            <div class="row">
+
+                <div style="width:100%" id="positions-section">
+
+                    <div class="card">
+
+                        <div class="card-header">
+
+                            <div class="mt-2">
+
+                                <h4>Experience</h4>
+
+                                <span class="line"></span>
+
+                            </div>
+
+                        </div>
+
+                        <div class="card-body" id="positions">
+
+                            <template id="position-template">
+
+                                <div>
+
+                                    <h6 class="title text-danger position-title"></h6>
+
+                                    <p class="position-company"></p>
+
+                                    <p class="position-years"></p>
+
+                                    <p class="subtitle position-description"></p>
+
+                                    <hr>
+
+                                </div>
+
+                            </template>
+
+                        <div id="position-0">
+
+                                    <h6 class="title text-danger position-title">Software Intern</h6>
+
+                                    <p class="position-company">Wi-Tronix</p>
+
+                                    <p class="position-years">6/2024 - Present</p>
+
+                                    <p class="subtitle position-description">- Developed embedded software using C++ decoding 380+ real-time signals over Ethernet to integrate existing codebase with new customer’s specs ensuring safe rail operations in NY and NJ<br>- Resolved 12 stories and 2 SEVs, taking initiative to take on extra stories and help teammates<br>- Reviewed pull requests ensuring code readability and adherence to company code standards<br>- Saved a module from a bug by effectively unit testing edge cases, identified a flaw in documentation during integration testing, and ensured code completion and stability through regression testing<br>- Walked an extra mile to ensure readability and maintainability of my code and put in extra effort to fix internal issues decreasing productivity<br>- Accepted part-time fall co-op that was created specifically for me as continuation of my employment</p>
+
+                                    <hr>
+
+                                </div><div id="position-1">
+
+                                    <h6 class="title text-danger position-title">Software Engineer Intern</h6>
+
+                                    <p class="position-company">Rose-Hulman Ventures</p>
+
+                                    <p class="position-years">12/2023 - 5/2024</p>
+
+                                    <p class="subtitle position-description">- Modernized company’s website by migrating some parts to ASP.NET Core and enhancing the interface and functionality to provide a seamless and engaging user experience<br>- Moved local static files to the cloud to enhance scalability and provide more efficient data management and used Azure Blob Storage API to access the files from the web application<br>- Used ASP.NET models and SQL Server Management Studio to ensure relational database follows new requirements<br>- Performed usability and regression testing to identify and fix bugs in development and production and ensure a streamlined user experience<br>- Investigated issues in the code I had never worked with, took responsibility for the bugs, and was able to rectify the issues prior to customer noticing them in 90% of the cases</p>
+
+                                    <hr>
+
+                                </div><div id="position-2">
+
+                                    <h6 class="title text-danger position-title">Researcher</h6>
+
+                                    <p class="position-company">Rose-Hulman Institute of Technology</p>
+
+                                    <p class="position-years">10/2023 - 5/2024</p>
+
+                                    <p class="subtitle position-description">- Developed software that analyzes students’ assignment-taking patterns using Python and Java to maximize the output of CSSE courses at Rose-Hulman<br>- Tracked time spent on problems, number of attempts, length of breaks, and tendency to guess and check to predict student’s overall performance in a course<br>- Applied the findings to refine Rose-Hulman courses and make them more accessible and advantageous to students</p>
+
+                                    <hr>
+
+                                </div><div id="position-3">
+
+                                    <h6 class="title text-danger position-title">Full Stack Developer</h6>
+
+                                    <p class="position-company">Freelance</p>
+
+                                    <p class="position-years">3/2020 - 6/2023</p>
+
+                                    <p class="subtitle position-description">- Developed landing pages, personal web pages, business card sites, and corporate websites. Overall, created 10+ solutions<br>- Used HTML, CSS, and JavaScript along with third-party modules, such as intl-tel-input.js, bulma.css, and others, for the front end <br>- Utilized Python, namely Flask, Flask-Login, and Flask-SQLAlchemy, for the back end. Worked with databases, using pure SQL and ORMs. Developed admin panels<br>- Frequently advised clients on design and content of their web pages. Worked closely with customers to bring their ideas to life. Dealt well with ambiguity and undefined or broadly defined problems<br>- Volunteered as a web developer for nonprofits, such as charities aiding children with disabilities and elderly people, making sure they can get a website for free<br>- Example: https://nogotochki.xyz (may require a VPN because of the country the hosting is located in)</p>
+
+                                    <hr>
+
+                                </div></div>
+
+                    </div>
+
+                </div>
+
+                <div style="width:100%" id="education-section">
+
+                    <div class="card">
+
+                        <div class="card-header">
+
+                            <div class="mt-2">
+
+                                <h4>Education</h4>
+
+                                <span class="line"></span>
+
+                            </div>
+
+                        </div>
+
+                        <div class="card-body" id="education">
+
+                            <template id="education-template">
+
+                                <div>
+
+                                    <h6 class="title text-danger education-field"></h6>
+
+                                    <p><span class="education-degree"></span> at <span class="education-school"></span>
+
+                                    </p>
+
+                                    <p class="education-years"></p>
+
+                                    <p class="education-description"></p>
+
+                                    <hr>
+
+                                </div>
+
+                            </template>
+
+                        <div id="education-0">
+
+                                    <h6 class="title text-danger education-field">Computer Software Engineering</h6>
+
+                                    <p><span class="education-degree">Bachelor of Science - BS</span> at <span class="education-school">Rose-Hulman Institute of Technology</span>
+
+                                    </p>
+
+                                    <p class="education-years">1/2023 - 1/2027</p>
+
+                                    <p class="education-description"></p>
+
+                                    <hr>
+
+                                </div></div>
+
+                    </div>
+
+                </div>
+
+                <div style="width:100%" id="skills-section">
+
+                    <div class="card">
+
+                        <div class="card-header">
+
+                            <div class="pull-left">
+
+                                <h4 class="mt-2">Skills</h4>
+
+                                <span class="line"></span>
+
+                            </div>
+
+                        </div>
+
+                        <style>
+
+                            .skills-container {
+
+                                display: flex;
+
+                                flex-wrap: wrap;
+
+                                gap: 12px;
+
+                                padding: 20px;
+
+                                max-width: 800px;
+
+                                margin: 0 auto;
+
+                                justify-content: flex-start;
+
+                                background-color: white;
+
+                                border-radius: 8px;
+
+                            }
+
+
+
+                            .skill-bubble {
+
+                                background-color: #f0f4f8;
+
+                                padding: 8px 16px;
+
+                                border-radius: 12px;
+
+                                display: inline-flex;
+
+                                align-items: center;
+
+                                justify-content: center;
+
+                                font-size: 14px;
+
+                                color: #2d3748;
+
+                                transition: all 0.2s ease-in-out;
+
+                                border: 2px solid transparent;
+
+                                cursor: default;
+
+                                font-weight: 500;
+
+                            }
+
+
+
+                            .skill-bubble:hover {
+
+                                background-color: #e2e8f0;
+
+                                transform: translateY(-2px);
+
+                                box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+
+                                border-color: #4299e1;
+
+                            }
+
+                        </style>
+
+                        <div class="card-body pb-2">
+
+                            <div class="skills-container" id="skills">
+
+
+
+
+
+                                <template id="skill-template">
+
+                                    <div>
+
+
+
+                                        <span class="skill-bubble skill-name"></span>
+
+
+
+                                    </div>
+
+                                </template>
+
+                            <div id="skill-0">
+
+
+
+                                        <span class="skill-bubble skill-name">Python (Programming Language)</span>
+
+
+
+                                    </div><div id="skill-1">
+
+
+
+                                        <span class="skill-bubble skill-name">Internet of Things (IoT)</span>
+
+
+
+                                    </div><div id="skill-2">
+
+
+
+                                        <span class="skill-bubble skill-name">HTML</span>
+
+
+
+                                    </div><div id="skill-3">
+
+
+
+                                        <span class="skill-bubble skill-name">Full-Stack Development</span>
+
+
+
+                                    </div><div id="skill-4">
+
+
+
+                                        <span class="skill-bubble skill-name">Creative Problem Solving</span>
+
+
+
+                                    </div><div id="skill-5">
+
+
+
+                                        <span class="skill-bubble skill-name">Embedded Software Programming</span>
+
+
+
+                                    </div><div id="skill-6">
+
+
+
+                                        <span class="skill-bubble skill-name">Git</span>
+
+
+
+                                    </div><div id="skill-7">
+
+
+
+                                        <span class="skill-bubble skill-name">Leadership</span>
+
+
+
+                                    </div><div id="skill-8">
+
+
+
+                                        <span class="skill-bubble skill-name">Object-Oriented Programming (OOP)</span>
+
+
+
+                                    </div><div id="skill-9">
+
+
+
+                                        <span class="skill-bubble skill-name">SQL</span>
+
+
+
+                                    </div><div id="skill-10">
+
+
+
+                                        <span class="skill-bubble skill-name">SQLAlchemy</span>
+
+
+
+                                    </div><div id="skill-11">
+
+
+
+                                        <span class="skill-bubble skill-name">Java</span>
+
+
+
+                                    </div><div id="skill-12">
+
+
+
+                                        <span class="skill-bubble skill-name">C++</span>
+
+
+
+                                    </div><div id="skill-13">
+
+
+
+                                        <span class="skill-bubble skill-name">Linux</span>
+
+
+
+                                    </div><div id="skill-14">
+
+
+
+                                        <span class="skill-bubble skill-name">ASP.NET</span>
+
+
+
+                                    </div><div id="skill-15">
+
+
+
+                                        <span class="skill-bubble skill-name">C#</span>
+
+
+
+                                    </div><div id="skill-16">
+
+
+
+                                        <span class="skill-bubble skill-name">Visual Studio</span>
+
+
+
+                                    </div><div id="skill-17">
+
+
+
+                                        <span class="skill-bubble skill-name">Flexible Approach</span>
+
+
+
+                                    </div><div id="skill-18">
+
+
+
+                                        <span class="skill-bubble skill-name">Pressure Handling</span>
+
+
+
+                                    </div><div id="skill-19">
+
+
+
+                                        <span class="skill-bubble skill-name">Problem Solving</span>
+
+
+
+                                    </div><div id="skill-20">
+
+
+
+                                        <span class="skill-bubble skill-name">Strategic Thinking</span>
+
+
+
+                                    </div><div id="skill-21">
+
+
+
+                                        <span class="skill-bubble skill-name">Analytical Skills</span>
+
+
+
+                                    </div><div id="skill-22">
+
+
+
+                                        <span class="skill-bubble skill-name">Easily Adaptable</span>
+
+
+
+                                    </div><div id="skill-23">
+
+
+
+                                        <span class="skill-bubble skill-name">Back-End Web Development</span>
+
+
+
+                                    </div><div id="skill-24">
+
+
+
+                                        <span class="skill-bubble skill-name">Django</span>
+
+
+
+                                    </div><div id="skill-25">
+
+
+
+                                        <span class="skill-bubble skill-name">Flask</span>
+
+
+
+                                    </div><div id="skill-26">
+
+
+
+                                        <span class="skill-bubble skill-name">User Authentication</span>
+
+
+
+                                    </div><div id="skill-27">
+
+
+
+                                        <span class="skill-bubble skill-name">API Development</span>
+
+
+
+                                    </div><div id="skill-28">
+
+
+
+                                        <span class="skill-bubble skill-name">Application Programming Interfaces (API)</span>
+
+
+
+                                    </div><div id="skill-29">
+
+
+
+                                        <span class="skill-bubble skill-name">JSON</span>
+
+
+
+                                    </div><div id="skill-30">
+
+
+
+                                        <span class="skill-bubble skill-name">Front-End Development</span>
+
+
+
+                                    </div><div id="skill-31">
+
+
+
+                                        <span class="skill-bubble skill-name">Cascading Style Sheets (CSS)</span>
+
+
+
+                                    </div><div id="skill-32">
+
+
+
+                                        <span class="skill-bubble skill-name">JavaScript</span>
+
+
+
+                                    </div><div id="skill-33">
+
+
+
+                                        <span class="skill-bubble skill-name">jQuery</span>
+
+
+
+                                    </div><div id="skill-34">
+
+
+
+                                        <span class="skill-bubble skill-name">Responsive Web Design</span>
+
+
+
+                                    </div><div id="skill-35">
+
+
+
+                                        <span class="skill-bubble skill-name">Bulma (CSS Framework)</span>
+
+
+
+                                    </div><div id="skill-36">
+
+
+
+                                        <span class="skill-bubble skill-name">Bootstrap (Framework)</span>
+
+
+
+                                    </div><div id="skill-37">
+
+
+
+                                        <span class="skill-bubble skill-name">Creativity and Innovation</span>
+
+
+
+                                    </div><div id="skill-38">
+
+
+
+                                        <span class="skill-bubble skill-name">Web Application Development</span>
+
+
+
+                                    </div><div id="skill-39">
+
+
+
+                                        <span class="skill-bubble skill-name">GitHub</span>
+
+
+
+                                    </div></div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- Portfolio Section -->
+
+    <section class="section bg-custom-gray" id="portfolio">
+
+        <div class="container" id="projects-section">
+
+            <h1 class="mb-5"><span class="text-danger">My</span> Portfolio</h1>
+
+            <div class="portfolio">
+
+                <div class="portfolio-container" id="projects">
+
+                    <template id="project-template">
+
+                        <div>
+
+                            <a class="project-link">
+
+                                <div class="portfolio-item">
+
+                                    <img class="img-fluid proj-img" alt="project image">
+
+                                    <!-- Add this div for the always-visible title -->
+
+                                    <div class="text-holder">
+
+                                        <h6 class="title project-name"></h6>
+
+                                    </div>
+
+                                    <div class="content-holder">
+
+                                        <div class="text-holder">
+
+                                            <p class="subtitle project-description"></p>
+
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                            </a>
+
+                        </div>
+
+                    </template>
+
+                <div id="project-0">
+
+                            <a class="project-link" href="https://github.com/aadev151/aadev151">
+
+                                <div class="portfolio-item">
+
+                                    <img class="img-fluid proj-img" alt="project image" src="https://picsum.photos/700/600?random=0">
+
+                                    <!-- Add this div for the always-visible title -->
+
+                                    <div class="text-holder">
+
+                                        <h6 class="title project-name">aadev151</h6>
+
+                                    </div>
+
+                                    <div class="content-holder">
+
+                                        <div class="text-holder">
+
+                                            <p class="subtitle project-description"></p>
+
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                            </a>
+
+                        </div><div id="project-1">
+
+                            <a class="project-link" href="https://github.com/aadev151/aadev151.github.io">
+
+                                <div class="portfolio-item">
+
+                                    <img class="img-fluid proj-img" alt="project image" src="https://picsum.photos/700/600?random=1">
+
+                                    <!-- Add this div for the always-visible title -->
+
+                                    <div class="text-holder">
+
+                                        <h6 class="title project-name">aadev151.github.io</h6>
+
+                                    </div>
+
+                                    <div class="content-holder">
+
+                                        <div class="text-holder">
+
+                                            <p class="subtitle project-description"></p>
+
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                            </a>
+
+                        </div><div id="project-2">
+
+                            <a class="project-link" href="https://github.com/aadev151/CompArchFinalProject">
+
+                                <div class="portfolio-item">
+
+                                    <img class="img-fluid proj-img" alt="project image" src="https://picsum.photos/700/600?random=2">
+
+                                    <!-- Add this div for the always-visible title -->
+
+                                    <div class="text-holder">
+
+                                        <h6 class="title project-name">CompArchFinalProject</h6>
+
+                                    </div>
+
+                                    <div class="content-holder">
+
+                                        <div class="text-holder">
+
+                                            <p class="subtitle project-description"></p>
+
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                            </a>
+
+                        </div><div id="project-3">
+
+                            <a class="project-link" href="https://github.com/aadev151/duckystyle">
+
+                                <div class="portfolio-item">
+
+                                    <img class="img-fluid proj-img" alt="project image" src="https://picsum.photos/700/600?random=3">
+
+                                    <!-- Add this div for the always-visible title -->
+
+                                    <div class="text-holder">
+
+                                        <h6 class="title project-name">duckystyle</h6>
+
+                                    </div>
+
+                                    <div class="content-holder">
+
+                                        <div class="text-holder">
+
+                                            <p class="subtitle project-description">A Flask website mocking an NFT auction with pictures of ducks. Supports adding and withdrawing currency and getting currency for watching an ad. Archived as of 05/10/2022</p>
+
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                            </a>
+
+                        </div><div id="project-4">
+
+                            <a class="project-link" href="https://github.com/aadev151/food-delivery-chatbot">
+
+                                <div class="portfolio-item">
+
+                                    <img class="img-fluid proj-img" alt="project image" src="https://picsum.photos/700/600?random=4">
+
+                                    <!-- Add this div for the always-visible title -->
+
+                                    <div class="text-holder">
+
+                                        <h6 class="title project-name">food-delivery-chatbot</h6>
+
+                                    </div>
+
+                                    <div class="content-holder">
+
+                                        <div class="text-holder">
+
+                                            <p class="subtitle project-description">A chatbot for the VK.com social network allowing to order food from different restaurants and pass the information to a delivery person. Archived as of 10/15/2020</p>
+
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                            </a>
+
+                        </div><div id="project-5">
+
+                            <a class="project-link" href="https://github.com/aadev151/helper-chatbot">
+
+                                <div class="portfolio-item">
+
+                                    <img class="img-fluid proj-img" alt="project image" src="https://picsum.photos/700/600?random=5">
+
+                                    <!-- Add this div for the always-visible title -->
+
+                                    <div class="text-holder">
+
+                                        <h6 class="title project-name">helper-chatbot</h6>
+
+                                    </div>
+
+                                    <div class="content-holder">
+
+                                        <div class="text-holder">
+
+                                            <p class="subtitle project-description"></p>
+
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                            </a>
+
+                        </div><div id="project-6">
+
+                            <a class="project-link" href="https://github.com/aadev151/helpers">
+
+                                <div class="portfolio-item">
+
+                                    <img class="img-fluid proj-img" alt="project image" src="https://picsum.photos/700/600?random=6">
+
+                                    <!-- Add this div for the always-visible title -->
+
+                                    <div class="text-holder">
+
+                                        <h6 class="title project-name">helpers</h6>
+
+                                    </div>
+
+                                    <div class="content-holder">
+
+                                        <div class="text-holder">
+
+                                            <p class="subtitle project-description">A Flask website connecting nonprofits to IT specialists willing to help them for free. Archived as of 02/25/2021</p>
+
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                            </a>
+
+                        </div><div id="project-7">
+
+                            <a class="project-link" href="https://github.com/aadev151/helpunicorn-kdd">
+
+                                <div class="portfolio-item">
+
+                                    <img class="img-fluid proj-img" alt="project image" src="https://picsum.photos/700/600?random=7">
+
+                                    <!-- Add this div for the always-visible title -->
+
+                                    <div class="text-holder">
+
+                                        <h6 class="title project-name">helpunicorn-kdd</h6>
+
+                                    </div>
+
+                                    <div class="content-holder">
+
+                                        <div class="text-holder">
+
+                                            <p class="subtitle project-description">An online Volunteer Book service, part of HelpUnicorn. Archived as of 12/11/2021</p>
+
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                            </a>
+
+                        </div><div id="project-8">
+
+                            <a class="project-link" href="https://github.com/aadev151/helpunicorn-redirect">
+
+                                <div class="portfolio-item">
+
+                                    <img class="img-fluid proj-img" alt="project image" src="https://picsum.photos/700/600?random=8">
+
+                                    <!-- Add this div for the always-visible title -->
+
+                                    <div class="text-holder">
+
+                                        <h6 class="title project-name">helpunicorn-redirect</h6>
+
+                                    </div>
+
+                                    <div class="content-holder">
+
+                                        <div class="text-holder">
+
+                                            <p class="subtitle project-description"></p>
+
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                            </a>
+
+                        </div><div id="project-9">
+
+                            <a class="project-link" href="https://github.com/aadev151/helpunicorn-wsbuilder">
+
+                                <div class="portfolio-item">
+
+                                    <img class="img-fluid proj-img" alt="project image" src="https://picsum.photos/700/600?random=9">
+
+                                    <!-- Add this div for the always-visible title -->
+
+                                    <div class="text-holder">
+
+                                        <h6 class="title project-name">helpunicorn-wsbuilder</h6>
+
+                                    </div>
+
+                                    <div class="content-holder">
+
+                                        <div class="text-holder">
+
+                                            <p class="subtitle project-description">A website builder for welfare funds</p>
+
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                            </a>
+
+                        </div><div id="project-10">
+
+                            <a class="project-link" href="https://github.com/aadev151/hospital-management">
+
+                                <div class="portfolio-item">
+
+                                    <img class="img-fluid proj-img" alt="project image" src="https://picsum.photos/700/600?random=10">
+
+                                    <!-- Add this div for the always-visible title -->
+
+                                    <div class="text-holder">
+
+                                        <h6 class="title project-name">hospital-management</h6>
+
+                                    </div>
+
+                                    <div class="content-holder">
+
+                                        <div class="text-holder">
+
+                                            <p class="subtitle project-description"></p>
+
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                            </a>
+
+                        </div><div id="project-11">
+
+                            <a class="project-link" href="https://github.com/aadev151/HQ-Browser">
+
+                                <div class="portfolio-item">
+
+                                    <img class="img-fluid proj-img" alt="project image" src="https://picsum.photos/700/600?random=11">
+
+                                    <!-- Add this div for the always-visible title -->
+
+                                    <div class="text-holder">
+
+                                        <h6 class="title project-name">HQ-Browser</h6>
+
+                                    </div>
+
+                                    <div class="content-holder">
+
+                                        <div class="text-holder">
+
+                                            <p class="subtitle project-description">An HTML page allowing you to query different search engines and speed up your search experience. Archived as of 11/26/2020</p>
+
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                            </a>
+
+                        </div><div id="project-12">
+
+                            <a class="project-link" href="https://github.com/aadev151/mp3-player">
+
+                                <div class="portfolio-item">
+
+                                    <img class="img-fluid proj-img" alt="project image" src="https://picsum.photos/700/600?random=12">
+
+                                    <!-- Add this div for the always-visible title -->
+
+                                    <div class="text-holder">
+
+                                        <h6 class="title project-name">mp3-player</h6>
+
+                                    </div>
+
+                                    <div class="content-holder">
+
+                                        <div class="text-holder">
+
+                                            <p class="subtitle project-description">A PyQt5 MP3 player capable of reading a track's metadata, skipping a track and going back, pausing, creating playlists, and sharing playlists</p>
+
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                            </a>
+
+                        </div><div id="project-13">
+
+                            <a class="project-link" href="https://github.com/aadev151/nextpage-mvp">
+
+                                <div class="portfolio-item">
+
+                                    <img class="img-fluid proj-img" alt="project image" src="https://picsum.photos/700/600?random=13">
+
+                                    <!-- Add this div for the always-visible title -->
+
+                                    <div class="text-holder">
+
+                                        <h6 class="title project-name">nextpage-mvp</h6>
+
+                                    </div>
+
+                                    <div class="content-holder">
+
+                                        <div class="text-holder">
+
+                                            <p class="subtitle project-description">An MVP for my EMGT-100 startup project -- a digital alternative for restaurant pagers. Provides both back end and front end</p>
+
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                            </a>
+
+                        </div><div id="project-14">
+
+                            <a class="project-link" href="https://github.com/aadev151/noblittstem">
+
+                                <div class="portfolio-item">
+
+                                    <img class="img-fluid proj-img" alt="project image" src="https://picsum.photos/700/600?random=14">
+
+                                    <!-- Add this div for the always-visible title -->
+
+                                    <div class="text-holder">
+
+                                        <h6 class="title project-name">noblittstem</h6>
+
+                                    </div>
+
+                                    <div class="content-holder">
+
+                                        <div class="text-holder">
+
+                                            <p class="subtitle project-description">The template of the workshop website for the Noblitt Scholars STEM Outreach Committee at Rose-Hulman</p>
+
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                            </a>
+
+                        </div><div id="project-15">
+
+                            <a class="project-link" href="https://github.com/aadev151/prevlink">
+
+                                <div class="portfolio-item">
+
+                                    <img class="img-fluid proj-img" alt="project image" src="https://picsum.photos/700/600?random=15">
+
+                                    <!-- Add this div for the always-visible title -->
+
+                                    <div class="text-holder">
+
+                                        <h6 class="title project-name">prevlink</h6>
+
+                                    </div>
+
+                                    <div class="content-holder">
+
+                                        <div class="text-holder">
+
+                                            <p class="subtitle project-description">A JavaScript library allowing developers to insert link previews on web pages. Archived as of 25/01/2022</p>
+
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                            </a>
+
+                        </div><div id="project-16">
+
+                            <a class="project-link" href="https://github.com/aadev151/race-game">
+
+                                <div class="portfolio-item">
+
+                                    <img class="img-fluid proj-img" alt="project image" src="https://picsum.photos/700/600?random=16">
+
+                                    <!-- Add this div for the always-visible title -->
+
+                                    <div class="text-holder">
+
+                                        <h6 class="title project-name">race-game</h6>
+
+                                    </div>
+
+                                    <div class="content-holder">
+
+                                        <div class="text-holder">
+
+                                            <p class="subtitle project-description">A Pygame racing game supporting 8 cars with different characteristics, 4 levels of difficulty, a fun mode, 2 languages, and 2 color schemes</p>
+
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                            </a>
+
+                        </div><div id="project-17">
+
+                            <a class="project-link" href="https://github.com/aadev151/researchDataFor230">
+
+                                <div class="portfolio-item">
+
+                                    <img class="img-fluid proj-img" alt="project image" src="https://picsum.photos/700/600?random=17">
+
+                                    <!-- Add this div for the always-visible title -->
+
+                                    <div class="text-holder">
+
+                                        <h6 class="title project-name">researchDataFor230</h6>
+
+                                    </div>
+
+                                    <div class="content-holder">
+
+                                        <div class="text-holder">
+
+                                            <p class="subtitle project-description"></p>
+
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                            </a>
+
+                        </div><div id="project-18">
+
+                            <a class="project-link" href="https://github.com/aadev151/rocketry-website">
+
+                                <div class="portfolio-item">
+
+                                    <img class="img-fluid proj-img" alt="project image" src="https://picsum.photos/700/600?random=18">
+
+                                    <!-- Add this div for the always-visible title -->
+
+                                    <div class="text-holder">
+
+                                        <h6 class="title project-name">rocketry-website</h6>
+
+                                    </div>
+
+                                    <div class="content-holder">
+
+                                        <div class="text-holder">
+
+                                            <p class="subtitle project-description"></p>
+
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                            </a>
+
+                        </div><div id="project-19">
+
+                            <a class="project-link" href="https://github.com/aadev151/ru-cv">
+
+                                <div class="portfolio-item">
+
+                                    <img class="img-fluid proj-img" alt="project image" src="https://picsum.photos/700/600?random=19">
+
+                                    <!-- Add this div for the always-visible title -->
+
+                                    <div class="text-holder">
+
+                                        <h6 class="title project-name">ru-cv</h6>
+
+                                    </div>
+
+                                    <div class="content-holder">
+
+                                        <div class="text-holder">
+
+                                            <p class="subtitle project-description"></p>
+
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                            </a>
+
+                        </div><div id="project-20">
+
+                            <a class="project-link" href="https://github.com/aadev151/squid-pygame">
+
+                                <div class="portfolio-item">
+
+                                    <img class="img-fluid proj-img" alt="project image" src="https://picsum.photos/700/600?random=20">
+
+                                    <!-- Add this div for the always-visible title -->
+
+                                    <div class="text-holder">
+
+                                        <h6 class="title project-name">squid-pygame</h6>
+
+                                    </div>
+
+                                    <div class="content-holder">
+
+                                        <div class="text-holder">
+
+                                            <p class="subtitle project-description">A Pygame game inspired by Netflix's Squid Game. Archived as of 02/08/2022</p>
+
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                            </a>
+
+                        </div><div id="project-21">
+
+                            <a class="project-link" href="https://github.com/aadev151/todos">
+
+                                <div class="portfolio-item">
+
+                                    <img class="img-fluid proj-img" alt="project image" src="https://picsum.photos/700/600?random=21">
+
+                                    <!-- Add this div for the always-visible title -->
+
+                                    <div class="text-holder">
+
+                                        <h6 class="title project-name">todos</h6>
+
+                                    </div>
+
+                                    <div class="content-holder">
+
+                                        <div class="text-holder">
+
+                                            <p class="subtitle project-description">This Tkinter app will help you to organize your tasks.</p>
+
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                            </a>
+
+                        </div><div id="project-22">
+
+                            <a class="project-link" href="https://github.com/aadev151/Towelly">
+
+                                <div class="portfolio-item">
+
+                                    <img class="img-fluid proj-img" alt="project image" src="https://picsum.photos/700/600?random=22">
+
+                                    <!-- Add this div for the always-visible title -->
+
+                                    <div class="text-holder">
+
+                                        <h6 class="title project-name">Towelly</h6>
+
+                                    </div>
+
+                                    <div class="content-holder">
+
+                                        <div class="text-holder">
+
+                                            <p class="subtitle project-description"></p>
+
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                            </a>
+
+                        </div><div id="project-23">
+
+                            <a class="project-link" href="https://github.com/aadev151/TowellyDemo">
+
+                                <div class="portfolio-item">
+
+                                    <img class="img-fluid proj-img" alt="project image" src="https://picsum.photos/700/600?random=23">
+
+                                    <!-- Add this div for the always-visible title -->
+
+                                    <div class="text-holder">
+
+                                        <h6 class="title project-name">TowellyDemo</h6>
+
+                                    </div>
+
+                                    <div class="content-holder">
+
+                                        <div class="text-holder">
+
+                                            <p class="subtitle project-description"></p>
+
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                            </a>
+
+                        </div><div id="project-24">
+
+                            <a class="project-link" href="https://github.com/aadev151/wavesimulator">
+
+                                <div class="portfolio-item">
+
+                                    <img class="img-fluid proj-img" alt="project image" src="https://picsum.photos/700/600?random=24">
+
+                                    <!-- Add this div for the always-visible title -->
+
+                                    <div class="text-holder">
+
+                                        <h6 class="title project-name">wavesimulator</h6>
+
+                                    </div>
+
+                                    <div class="content-holder">
+
+                                        <div class="text-holder">
+
+                                            <p class="subtitle project-description"></p>
+
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                            </a>
+
+                        </div><div id="project-25">
+
+                            <a class="project-link" href="https://github.com/aadev151/xmas-quest">
+
+                                <div class="portfolio-item">
+
+                                    <img class="img-fluid proj-img" alt="project image" src="https://picsum.photos/700/600?random=25">
+
+                                    <!-- Add this div for the always-visible title -->
+
+                                    <div class="text-holder">
+
+                                        <h6 class="title project-name">xmas-quest</h6>
+
+                                    </div>
+
+                                    <div class="content-holder">
+
+                                        <div class="text-holder">
+
+                                            <p class="subtitle project-description">An online Christmas multiplayer game for your browser. Archived as of 12/25/2021</p>
+
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                            </a>
+
+                        </div><div id="project-26">
+
+                            <a class="project-link" href="https://github.com/aadev151/yandex-homework">
+
+                                <div class="portfolio-item">
+
+                                    <img class="img-fluid proj-img" alt="project image" src="https://picsum.photos/700/600?random=26">
+
+                                    <!-- Add this div for the always-visible title -->
+
+                                    <div class="text-holder">
+
+                                        <h6 class="title project-name">yandex-homework</h6>
+
+                                    </div>
+
+                                    <div class="content-holder">
+
+                                        <div class="text-holder">
+
+                                            <p class="subtitle project-description">A mock online store written in Django. Supports posting items, distinguishing them by tags and categories, getting a 1-5 range review on items, and other functionality a real online store would need</p>
+
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                            </a>
+
+                        </div></div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <div class="section contact" id="contact">
+
+        <div id="map" class="map"></div>
+
+        <div class="container">
+
+            <div class="row">
+
+                <div class="col-lg-8">
+
+                    <div class="contact-form-card">
+
+                        <h4 class="contact-title">Send a message</h4>
+
+                        <form action="">
+
+                            <div class="form-group">
+
+                                <input class="form-control" type="text" placeholder="Name *" required="">
+
+                            </div>
+
+                            <div class="form-group">
+
+                                <input class="form-control" type="email" placeholder="Email *" required="">
+
+                            </div>
+
+                            <div class="form-group">
+
+                                <textarea class="form-control" id=" placeholder=" message="" *"="" rows="7" required=""></textarea>
+
+                            </div>
+
+                            <div class="form-group ">
+
+                                <button type="submit" class="form-control btn btn-primary">Send Message</button>
+
+                            </div>
+
+                        </form>
+
+                    </div>
+
+                </div>
+
+                <div class="col-lg-4">
+
+                    <div class="contact-info-card">
+
+                        <h4 class="contact-title">Get in touch</h4>
+
+                        <div class="row mb-2">
+
+                            <div class="col-1 pt-1 mr-1">
+
+                                <i class="ti-mobile icon-md"></i>
+
+                            </div>
+
+                            <div class="col-10 ">
+
+                                <h6 class="d-inline">Phone : <br> <span class="text-muted">123 456 7890</span></h6>
+
+                            </div>
+
+                        </div>
+
+                        <div class="row mb-2">
+
+                            <div class="col-1 pt-1 mr-1">
+
+                                <i class="ti-email icon-md"></i>
+
+                            </div>
+
+                            <div class="col-10">
+
+                                <h6 class="d-inline">Email :<br> <span class="text-muted">hello@codefolio.example.com</span></h6>
+
+                            </div>
+
+                        </div>
+
+                        <ul class="social-icons pt-4">
+
+                            <li class="social-item"><a class="social-link text-dark" href="https://www.linkedin.com/in/aleksandr-anisimov" target="_blank"><i class="ti-linkedin" aria-hidden="true"></i></a></li>
+
+                            <li class="social-item"><a class="social-link text-dark" href="https://github.com/github.com/aadev151" target="_blank"><i class="ti-github" aria-hidden="true"></i></a></li>
+
+                            <li class="social-item"><a class="social-link text-dark" href="#"><i class="" aria-hidden="true"></i></a></li>
+
+                            <li class="social-item"><a class="social-link text-dark" href="#"><i class="" aria-hidden="true"></i></a></li>
+
+                            <li class="social-item"><a class="social-link text-dark" href="#"><i class="" aria-hidden="true"></i></a></li>
+
+                            <li class="social-item"><a class="social-link text-dark" href="#"><i class="" aria-hidden="true"></i></a></li>
+
+                        </ul>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <br><br><br><br>
+
+        </div>
+
+    </div>
+
+    <footer class="footer py-3">
+
+        <div class="container">
+
+            <p class="mb-0 text-dark footer-text" style="font-size: small;">
+
+                ©
+
+                <script>document.write(new Date().getFullYear())</script>2025 John Doe
+
+            </p>
+
+        </div>
+
+    </footer>
+
+
+
+    <!-- core  -->
+
+    <script src="/static/js/templates/formal/jquery-3.4.1.min.js"></script>
+
+    <script src="/static/js/templates/formal/bootstrap.bundle.min.js"></script>
+
+
+
+    <!-- bootstrap 3 affix -->
+
+    <script src="/static/js/templates/formal/bootstrap.affix.js"></script>
+
+
+
+    <!-- Isotope  -->
+
+    <script src="/static/js/templates/formal/isotope.pkgd.min.js"></script>
+
+
+
+    <!-- JohnDoe js -->
+
+    <script src="/static/js/templates/formal/johndoe.js"></script>
+
+
+
+
+
+
+
+
+    </body>
+
+    </html>
