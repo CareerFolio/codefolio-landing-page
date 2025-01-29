@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>CareerFolio | Portfolio Examples</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
+    
+    <!-- Import the same fonts and styles as the main page -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      data-tag="font"
+    />
+    <link rel="stylesheet" href="static/style.css" />
+    <link rel="stylesheet" href="static/index.css" />
+    
+    <!-- Keep the same scrollbar styling -->
+    <style>
+       body::-webkit-scrollbar {
+         width: 0.5em;
+         z-index: 100;
+         background-color:transparent;
+       }
+
+       body::-webkit-scrollbar-thumb {
+         background-color:white;
+         box-shadow:0 -100vh 0 100vh #5128f5;
+       }
+
+       html {
+          scroll-behavior: smooth;
+       }
+
+       /* Additional styles for the showcase grid */
+       .showcase-grid {
+         display: grid;
+         grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+         gap: 2rem;
+         padding: 2rem;
+         max-width: 1200px;
+         margin: 0 auto;
+       }
+
+       .showcase-item {
+         background: white;
+         border-radius: 10px;
+         overflow: hidden;
+         transition: transform 0.3s ease;
+         box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+       }
+
+       .showcase-item:hover {
+         transform: translateY(-5px);
+       }
+
+       .showcase-image {
+         width: 100%;
+         height: 200px;
+         object-fit: cover;
+       }
+
+       .showcase-content {
+         padding: 1.5rem;
+       }
+
+       .showcase-title {
+         font-size: 1.25rem;
+         font-weight: 600;
+         margin-bottom: 0.5rem;
+       }
+
+       .showcase-description {
+         font-size: 0.9rem;
+         color: #666;
+         margin-bottom: 1rem;
+       }
+
+       .showcase-link {
+         display: inline-block;
+         padding: 0.5rem 1rem;
+         background: #5128f5;
+         color: white;
+         text-decoration: none;
+         border-radius: 5px;
+         transition: background 0.3s ease;
+       }
+
+       .showcase-link:hover {
+         background: #4020c4;
+       }
+    </style>
+  </head>
+  <body>
+    <div>
+      <div class="home-container10">
+        <!-- Header Section -->
+        <header class="home-header1">
+          <div id="mobile-menu" class="home-mobile-navigation">
+            <img
+              alt="CareerFolio Logo"
+              src="static/lll.svg"
+              class="home-logo1"
+            />
+            <div class="home-links1">
+              <a href="index.html#about" class="Link">About</a>
+              <a href="index.html#how" class="Link">How it works</a>
+              <a href="index.html#newsletter" class="Link">Newsletter</a>
+            </div>
+            <div id="close-mobile-menu" class="home-close-mobile-menu">
+              <svg viewBox="0 0 804.5714285714286 1024" class="home-icon10">
+                <path d="M741.714 755.429c0 14.286-5.714 28.571-16 38.857l-77.714 77.714c-10.286 10.286-24.571 16-38.857 16s-28.571-5.714-38.857-16l-168-168-168 168c-10.286 10.286-24.571 16-38.857 16s-28.571-5.714-38.857-16l-77.714-77.714c-10.286-10.286-16-24.571-16-38.857s5.714-28.571 16-38.857l168-168-168-168c-10.286-10.286-16-24.571-16-38.857s5.714-28.571 16-38.857l77.714-77.714c10.286-10.286 24.571-16 38.857-16s28.571 5.714 38.857 16l168 168 168-168c10.286-10.286 24.571-16 38.857-16s28.571 5.714 38.857 16l77.714 77.714c10.286 10.286 16 24.571 16 38.857s-5.714 28.571-16 38.857l-168 168 168 168c10.286 10.286 16 24.571 16 38.857z"></path>
+              </svg>
+            </div>
+          </div>
+          <div class="home-desktop-navigation">
+            <nav class="home-centered">
+              <div class="home-left1">
+                <a href="index.html">
+                  <img src="static/lll.svg" width="140" alt="CareerFolio Logo">
+                </a>
+                <div class="home-links2">
+                  <a href="index.html#about" class="Link">About</a>
+                  <a href="index.html#how" class="Link">How it works</a>
+                  <a href="index.html#newsletter" class="Link">Newsletter</a>
+                </div>
+              </div>
+              <div class="home-right1">
+                <a href="index.html" class="home-get-started1">
+                  <span class="home-text106">Back to Home</span>
+                </a>
+              </div>
+            </nav>
+          </div>
+        </header>
+
+        <!-- Main Content -->
+        <section class="home-hero">
+          <header class="home-content1">
+            <h1 class="home-text107">Portfolio Examples</h1>
+            <p class="home-text108">
+              Explore our collection of stunning portfolio templates
+            </p>
+          </header>
+
+          <!-- Showcase Grid -->
+          <div class="showcase-grid">
+            <!-- Example Items - Replace with your actual showcase items -->
+            <div class="showcase-item">
+              <img src="static/public/demo-screenshot.png" alt="Portfolio Example 1" class="showcase-image">
+              <div class="showcase-content">
+                <h2 class="showcase-title">Modern Developer</h2>
+                <p class="showcase-description">A clean and minimal portfolio perfect for developers</p>
+                <a href="showcase/modern-developer.html" class="showcase-link">View Template</a>
+              </div>
+            </div>
+
+            <div class="showcase-item">
+              <img src="static/public/demo-screenshot.png" alt="Portfolio Example 2" class="showcase-image">
+              <div class="showcase-content">
+                <h2 class="showcase-title">Creative Designer</h2>
+                <p class="showcase-description">Showcase your design work with style</p>
+                <a href="showcase/creative-designer.html" class="showcase-link">View Template</a>
+              </div>
+            </div>
+
+            <div class="showcase-item">
+              <img src="static/public/demo-screenshot.png" alt="Portfolio Example 3" class="showcase-image">
+              <div class="showcase-content">
+                <h2 class="showcase-title">Professional Resume</h2>
+                <p class="showcase-description">Traditional resume style with a modern twist</p>
+                <a href="showcase/professional-resume.html" class="showcase-link">View Template</a>
+              </div>
+            </div>
+
+            <!-- Add more showcase items as needed -->
+          </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="home-footer">
+          <div class="home-top">
+            <img
+              alt="CareerFolio Logo"
+              src="static/lll2.svg"
+              class="home-branding"
+              style="filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(93deg) brightness(103%) contrast(103%);"
+            />
+            <span class="home-text238">Copyright © 2024</span>
+          </div>
+        </footer>
+      </div>
+    </div>
+
+    <!-- Mobile Menu Script -->
+    <script>
+      const mobileMenu = document.querySelector('#mobile-menu')
+      const closeButton = document.querySelector('#close-mobile-menu')
+      const openButton = document.querySelector('#open-mobile-menu')
+
+      openButton.addEventListener('click', function() {
+          mobileMenu.style.transform = 'translateX(0%)'
+      })
+
+      closeButton.addEventListener('click', function() {
+          mobileMenu.style.transform = 'translateX(100%)'
+      })
+    </script>
+  </body>
+</html>
