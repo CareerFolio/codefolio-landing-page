@@ -106,6 +106,188 @@
     <link rel="stylesheet" href="https://sibforms.com/forms/end-form/build/sib-styles.css">
   </head>
   <body>
+
+  
+  <style>
+    #newsletter-popup {
+      position: fixed;
+      inset: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      z-index: 1000;
+    }
+
+    #newsletter-popup.hidden {
+      display: none;
+    }
+
+    .popup-overlay {
+      position: fixed;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.6);
+      backdrop-filter: blur(4px);
+    }
+
+    .popup-content {
+      position: relative;
+      background: white;
+      padding: 2rem;
+      border-radius: 1rem;
+      box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+      max-width: 500px;
+      width: 90%;
+      text-align: center;
+      animation: popIn 0.5s ease-out;
+    }
+
+    @keyframes popIn {
+      0% { transform: scale(0.9); opacity: 0; }
+      100% { transform: scale(1); opacity: 1; }
+    }
+
+    .close-button {
+      position: absolute;
+      top: 1rem;
+      right: 1rem;
+      border: none;
+      background: none;
+      font-size: 1.5rem;
+      cursor: pointer;
+      color: #666;
+      padding: 0.5rem;
+    }
+
+    .emoji-header {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+    }
+
+    h2 {
+      font-size: 1.5rem;
+      font-weight: bold;
+      color: #1a1a1a;
+      margin-bottom: 1.5rem;
+    }
+
+    .value-props {
+      display: grid;
+      gap: 1rem;
+      margin: 1.5rem 0;
+    }
+
+    .value-item {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      padding: 0.75rem;
+      background: #f8fafc;
+      border-radius: 0.5rem;
+    }
+
+    .value-item span {
+      font-size: 1.25rem;
+    }
+
+    .value-item p {
+      margin: 0;
+      text-align: left;
+      color: #4b5563;
+    }
+
+    .social-proof {
+      font-style: italic;
+      color: #6b7280;
+      margin: 1.5rem 0;
+      padding: 1rem;
+      background: #f3f4f6;
+      border-radius: 0.5rem;
+    }
+
+    .cta-button {
+      width: 100%;
+      padding: 1rem;
+      background: #3b82f6;
+      color: white;
+      border: none;
+      border-radius: 0.5rem;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background-color 0.2s;
+    }
+
+    .cta-button:hover {
+      background: #2563eb;
+    }
+
+    .no-spam {
+      color: #9ca3af;
+      font-size: 0.875rem;
+      margin-top: 1rem;
+    }
+  </style>
+</head>
+<body>
+  <div id="newsletter-popup" class="hidden">
+    <div class="popup-overlay"></div>
+    <div class="popup-content">
+      <button class="close-button">&times;</button>
+      <div class="emoji-header">⭐</div>
+      <h2>Create a Portfolio That Attracts Job Offers</h2>
+      <div class="value-props">
+        <div class="value-item">
+          <span>🔄</span>
+          <p>Sync your LinkedIn & GitHub profiles instantly</p>
+        </div>
+        <div class="value-item">
+          <span>🎯</span>
+          <p>Get noticed by top employers & clients</p>
+        </div>
+        <div class="value-item">
+          <span>📊</span>
+          <p>Track your portfolio's performance</p>
+        </div>
+      </div>
+      <button class="cta-button">Build My Portfolio Now</button>
+      <p class="no-spam">Get started in minutes. No coding required.</p>
+    </div>
+  </div>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const popup = document.getElementById('newsletter-popup');
+      const closeButton = popup.querySelector('.close-button');
+      const ctaButton = popup.querySelector('.cta-button');
+
+      // Show popup after 1 second
+      setTimeout(() => {
+        popup.classList.remove('hidden');
+      }, 1000);
+
+      // Close popup
+      closeButton.addEventListener('click', () => {
+        popup.classList.add('hidden');
+      });
+
+      // Handle CTA click
+      ctaButton.addEventListener('click', () => {
+        const newsletterSection = document.querySelector('#newsletter');
+        if (newsletterSection) {
+          newsletterSection.scrollIntoView({ behavior: 'smooth' });
+        }
+        popup.classList.add('hidden');
+      });
+
+      // Close on overlay click
+      popup.addEventListener('click', (e) => {
+        if (e.target === popup) {
+          popup.classList.add('hidden');
+        }
+      });
+    });
+  </script>
+
+    
     <link rel="stylesheet" href="static/style.css" />
     <div>
       <link href="static/index.css" rel="stylesheet" />
@@ -211,7 +393,7 @@
             </div>
           </div>
         </section>
-        <section class="home-features">
+        <section class="home-features" id="about">
           <div class="home-title" >
             <span class="home-text110" style="margin-top: 0;">
               <span>Let's elevate your personal brand</span>
@@ -271,7 +453,7 @@
             </div>
           </div>
         </section>
-        <section class="home-how-it-works">
+        <section class="home-how-it-works" id="how">
           <div class="home-centered-container3">
             <div class="home-heading2">
               <span class="home-text146">How it works</span>
